@@ -74,9 +74,9 @@ bool check_win(char c)
 int minimax(int depth,char move)
 {
 	if(check_win(maxi))
-		return 10-depth;
+		return 20-depth;
 	else if(check_win(mini))
-		return depth-10;
+		return depth-20;
 	else if(finish_moves())
 		return 0;
 	int best,f=0;
