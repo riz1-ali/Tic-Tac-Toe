@@ -1,2 +1,2 @@
 # Xtreme-Tic-Tac-Toe
-A Tic-Tac-Toe AI bot, created using Minimax Algorithm(without alpha beta pruning), making it impossible to win against.
+- Run python simulator.py to see the playing options. To play the game, run python simulator.py.
