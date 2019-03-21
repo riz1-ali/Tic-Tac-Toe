@@ -16,6 +16,7 @@ import signal
 import time
 import copy
 import traceback
+from bot import Bot
 
 TIME = 24
 MAX_PTS = 86
@@ -356,8 +357,8 @@ if __name__ == '__main__':
 
 	if len(sys.argv) != 2:
 		print 'Usage: python simulator.py <option>'
-		print '<option> can be 1 => Random player vs. Random player'
-		print '                2 => Human vs. Random Player'
+		print '<option> can be 1 => Bot vs. Bot'
+		print '                2 => Human vs. Bot'
 		print '                3 => Human vs. Human'
 		sys.exit(1)
  
@@ -365,11 +366,11 @@ if __name__ == '__main__':
 	obj2 = ''
 	option = sys.argv[1]	
 	if option == '1':
-		obj1 = Random_Player()
-		obj2 = Random_Player()
+		obj1 = Bot()
+		obj2 = Bot()
 
 	elif option == '2':
-		obj1 = Random_Player()
+		obj1 = Bot()
 		obj2 = Manual_Player()
 	elif option == '3':
 		obj1 = Manual_Player()

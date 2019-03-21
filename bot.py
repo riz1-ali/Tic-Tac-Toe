@@ -1,7 +1,7 @@
 from time import time
 
 
-class Team36:
+class Bot:
 
 	def __init__(self):
 		self.util = [3, 2, 3, 2, 4, 2, 3, 2, 3]
